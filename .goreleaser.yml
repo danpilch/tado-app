@@ -1,0 +1,10 @@
+# .goreleaser.yml
+brews:
+  - name: tado-app
+    tap:
+      owner: danpilch
+      name: homebrew-tap
+      token: "{{ .Env.GITHUB_TOKEN }}"
+    folder: Formula
+    description: "Control Tado Hot Water"
+    license: "MIT"
